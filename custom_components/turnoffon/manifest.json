@@ -1,6 +1,6 @@
 {
   "domain": "turnoffon",
-  "name": "turnooffon - timer on entities",
+  "name": "TURNOFFON Timer on entities",
   "documentation": "https://github.com/JiriKursky/turnoffon",
   "dependencies": [],
   "codeowners": ["@JiriKursky"],
