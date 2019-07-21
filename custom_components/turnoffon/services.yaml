@@ -1,0 +1,32 @@
+run_turnoffon:
+  description: This can be used to force run checking or children processes with turn_on/turn_off.
+  fields:
+    entity_id: {description: Entity id of the input datetime to set the new value.,
+      example: turnoffon.filtrace}
+turn_on:
+  description: Timer will run as usual, not used for children. 
+  fields:
+    entity_id: {description: Parent entity id of timer.,
+      example: turnoffon.filtrace}
+turn_off:
+  description: Timer will be stopped, not used for children. 
+  fields:
+    entity_id: {description: Parent entity id of timer.,
+      example: turnoffon.filtrace}
+set_time:
+  description: This can be used to dynamically set start_time, end_time and time_delta.
+  fields:
+    entity_id: {description: Entity id of the child entity.,
+      example: turnoffon.filtrace_01}
+    start_time: {description: Start time of timer.,
+      example: "6:10"}      
+    end_time: {description: End time.,
+      example: "6:20" }    
+    time_delta: {description: Len of time interval in minutes(max 59).,
+      example: 20 }
+reset_timers:
+  description: Setting to initial values.
+  fields:
+    entity_id: {description: Entity id of parent for resetting all or child for resetting only one.,
+      example: turnoffon.filtrace_01}    
+    
