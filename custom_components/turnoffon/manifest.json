@@ -1,8 +1,8 @@
 {
   "domain": "turnoffon",
-  "name": "Turn_off_on",
-  "documentation": "https://github.com/JiriKursky/Custom_components",
+  "name": "Timer on entities",
+  "documentation": "https://github.com/JiriKursky/turnoffon",
   "dependencies": [],
-  "codeowners": [],
+  "codeowners": ["@JiriKursky"],
   "requirements": []
 }
