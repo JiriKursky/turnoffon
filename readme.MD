@@ -9,17 +9,13 @@ Example of using turnoffon:
 
 ![Turnoffon](https://github.com/JiriKursky/Custom_components/blob/master/library/example_pump.JPG)
 
-Installation: 
-1. Create sub-folder *turnoffon* in folder *config/custom_components* and simply copy [files](https://github.com/JiriKursky/Custom_components/tree/master/turnoffon)
-2. Change your *configuration.yaml*.
+
 
 Example of turn_on/turn_off of filtration in intervals:
 10:20 - 20 minutes
 17:00 - 20:50
 
 In these intervals will each minute calling service *turn_on* - *input_boolean.filtration". Outside then *turn_off*. 
-
-
 
 Add to your *configuration.yaml*
 ```yaml
