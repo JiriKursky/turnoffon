@@ -34,8 +34,8 @@ Each child has these attributes:
 ![Attributes](https://github.com/JiriKursky/Custom_components/blob/master/library/turnoffon_attr.JPG)
 
 That's all!
+<a href="https://bmc.xyz/l/turnoffon" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/white_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
-https://bmc.xyz/l/turnoffon
 ___
 *Timing*
 
