@@ -34,6 +34,8 @@ Each child has these attributes:
 ![Attributes](https://github.com/JiriKursky/Custom_components/blob/master/library/turnoffon_attr.JPG)
 
 That's all!
+
+https://bmc.xyz/l/turnoffon
 ___
 *Timing*
 
