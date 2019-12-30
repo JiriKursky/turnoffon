@@ -385,10 +385,15 @@ async def async_setup(hass, config):
 
         entity.async_set_datetime(date, time)
 
-    if entities_input_datetime :
-        component_input_datetime.async_register_entity_service(
-            SERVICE_SET_DATETIME, async_set_datetime_service
-        )
+    try:
+        # There are issues with component input_datetime
+        if entities_input_datetime :
+            component_input_datetime.async_register_entity_service(
+                SERVICE_SET_DATETIME, async_set_datetime_service
+         )
+    except:
+        pass
+
 
     # Adding all entities
     await component.async_add_entities(entities)
