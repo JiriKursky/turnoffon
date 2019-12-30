@@ -23,7 +23,7 @@ from homeassistant.helpers.restore_state import RestoreEntity
 from homeassistant.util import dt as dt_util
 from homeassistant.core import split_entity_id
 from homeassistant.helpers.event import async_call_later
-from homeassistant.components.input_datetime import InputDatetime, ATTR_DATE, ATTR_TIME, SERVICE_SET_DATETIME, SERVICE_SET_DATETIME_SCHEMA
+from homeassistant.components.input_datetime import InputDatetime, ATTR_DATE, ATTR_TIME, SERVICE_SET_DATETIME
 
 DOMAIN = 'turnoffon'
 ENTITY_ID_FORMAT = DOMAIN + '.{}'
@@ -387,8 +387,7 @@ async def async_setup(hass, config):
 
     if entities_input_datetime :
         component_input_datetime.async_register_entity_service(
-            SERVICE_SET_DATETIME, SERVICE_SET_DATETIME_SCHEMA,
-            async_set_datetime_service
+            SERVICE_SET_DATETIME, async_set_datetime_service
         )
 
     # Adding all entities
@@ -512,7 +511,7 @@ class CasovacHlavni(TurnonoffEntity):
                 my_debug("Not found conditional entity. Setting to off - nothing will happen")
                 entity_is_on = False
             if not entity_is_on:                
-                my_debug("Condition stop calling")
+                my_debug("Condition {} caused stop calling interval. Next call: {}".format(entity, SCAN_INTERVAL))
                 """
                 async_track_time_interval(self.hass, self.regular_loop(),
                         datetime.timedelta(seconds=SCAN_INTERVAL))
